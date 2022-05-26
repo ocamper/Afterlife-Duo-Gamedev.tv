@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Button
+  - Ghost
+  - DeadPlayer
+  - DeathTrigger
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - GhostPlayer
+  - DefaultWall
+  - WallPlayer
+  - WallGhost
+  - NormalGround
+  - PlayerGround
+  - GhostGround
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3840641793
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 4117809801
+    locked: 0
+  - name: Player
+    uniqueID: 3495786011
+    locked: 0
+  - name: OverForeground
+    uniqueID: 4133230417
+    locked: 0
