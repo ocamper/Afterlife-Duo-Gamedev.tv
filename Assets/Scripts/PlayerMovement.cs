@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
             GameObject.Find("PlayerSpawner").GetComponent<PlayerSpawnerScript>().NewPlayer();
         }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A) && Time.timeScale == 1)
              playerAnim.SetBool("isWalking", true);
         else
              playerAnim.SetBool("isWalking", false);
