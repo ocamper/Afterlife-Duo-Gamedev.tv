@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 9058523605040872674}
   - component: {fileID: 9109158852050046184}
   - component: {fileID: 8983575658607171728}
+  - component: {fileID: 9218202260425107960}
   m_Layer: 0
   m_Name: Door
   m_TagString: MissileIgnore
@@ -261,6 +262,7 @@ MonoBehaviour:
   anim: {fileID: 9109158852050046184}
   closedDoor: {fileID: 9058523605754313046}
   opensfx: {fileID: 8983575658607171728}
+  triggerCollide: {fileID: 9218202260425107960}
 --- !u!95 &9109158852050046184
 Animator:
   serializedVersion: 3
@@ -376,6 +378,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &9218202260425107960
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058523605040872679}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.008748069, y: -0.036920846}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6150837, y: 0.9261583}
+  m_EdgeRadius: 0
 --- !u!1 &9058523605754313046
 GameObject:
   m_ObjectHideFlags: 0

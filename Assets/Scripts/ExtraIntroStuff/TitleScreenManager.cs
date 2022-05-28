@@ -17,6 +17,7 @@ public class TitleScreenManager : MonoBehaviour
     public void OnClick()
     {
         outScreen.SetActive(true);
+        SceneManager.LoadScene(1);
     }
 
     public void SpawnButton()

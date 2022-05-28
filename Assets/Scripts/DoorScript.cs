@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorScript : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class DoorScript : MonoBehaviour
 
     [SerializeField] private GameObject closedDoor;
     [SerializeField] private AudioSource opensfx;
+    [SerializeField] private BoxCollider2D triggerCollide;
 
     private void Update()
     {
@@ -42,11 +44,13 @@ public class DoorScript : MonoBehaviour
 
         if (playerActiveCount == playerButtons.Length && ghostActiveCount == ghostButtons.Length && universalActiveCount == universalButtons.Length)
         {
-            anim.SetBool("isOpen", true); //closedDoor.SetActive(false); 
+            anim.SetBool("isOpen", true);
+            triggerCollide.enabled = true;
         }
         else
         {
-            anim.SetBool("isOpen", false); //closedDoor.SetActive(true);
+            anim.SetBool("isOpen", false);
+            triggerCollide.enabled = false;
         }
 
 
@@ -59,4 +63,14 @@ public class DoorScript : MonoBehaviour
     {
         opensfx.Play();
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(GameObject.Find("Transition").GetComponent<TransitionScript>().activateOut());
+        }
+    }
+
+
 }

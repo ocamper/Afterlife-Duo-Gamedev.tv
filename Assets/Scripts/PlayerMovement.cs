@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movementAvailable = false;
         playerAnim.SetTrigger("isDead");
-        spRend.color = new Color(0.2f, 0.2f, 0.2f, 0.7f);
+        spRend.color = new Color(0.2f, 0.2f, 0.2f, 1);
         yield return new WaitForSeconds(2);
 
         if (GameObject.Find("GhostPlayer(Clone)") != null)
