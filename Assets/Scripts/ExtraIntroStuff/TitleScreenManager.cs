@@ -12,12 +12,14 @@ public class TitleScreenManager : MonoBehaviour
     [SerializeField] private AudioSource titleMusic;
     [SerializeField] private GameObject creditButton;
     [SerializeField] private GameObject creditUi;
+    [SerializeField] private AudioSource outroSfx;
     private bool musicPlayed;
 
     public void OnClick()
     {
         outScreen.SetActive(true);
-        SceneManager.LoadScene(1);
+        outroSfx.Play();
+        SceneManager.LoadSceneAsync(1);
     }
 
     public void SpawnButton()
