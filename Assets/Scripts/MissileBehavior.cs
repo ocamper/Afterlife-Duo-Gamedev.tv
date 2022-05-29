@@ -18,7 +18,7 @@ public class MissileBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!collision.gameObject.CompareTag("MissileIgnore"))
+        if (!collision.gameObject.CompareTag("MissileIgnore") && !collision.gameObject.CompareTag("DeadPlayer") && !collision.gameObject.CompareTag("DeathTrigger"))
             StartCoroutine(beginExplode());
     }
 

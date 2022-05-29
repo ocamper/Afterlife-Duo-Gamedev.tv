@@ -609,7 +609,6 @@ MonoBehaviour:
 
     -----------------------------------------------------------------------------------------
 
-
     Other
     Assets used (Proper links are on game page on itch.io)
 
@@ -633,7 +632,10 @@ MonoBehaviour:
     Electronic Music Pack 1: MrJoshuaMcLean at
     OpenGameArt.org
 
-    Pixel Saw Blade: Beedhan at OpenGameArt.org'
+    Pixel Saw Blade: Beedhan at OpenGameArt.org
+
+    Better
+    Minimal WebGL Template: Sean S. LeBlanc'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1842,7 +1844,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1c1184ec77096494b99abe780b7ddd58, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0

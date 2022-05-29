@@ -29,7 +29,6 @@ public class PlayerSpawnerScript : MonoBehaviour
             if (searchTutorialText)
             {
                 GameObject.Find("textMesh_search").GetComponent<TextMesh>().color = new Color(0, 0, 0, 1);
-                GameObject.Find("textMesh_search2").GetComponent<TextMesh>().color = new Color(0, 0, 0, 1);
             }
         }
 
