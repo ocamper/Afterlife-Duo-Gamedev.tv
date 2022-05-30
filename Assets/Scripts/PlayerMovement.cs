@@ -40,8 +40,8 @@ public class PlayerMovement : MonoBehaviour
             horizontalMove = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
-            StartCoroutine(startGhostSpawn());
+      //  if (Input.GetKeyDown(KeyCode.K))
+       //     StartCoroutine(startGhostSpawn());
 
         if (isDead)
         {
